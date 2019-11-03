@@ -12,3 +12,8 @@ To run:
 2. cd to directory
 3. docker build -t [name of image] .
 4. docker run -p 5900:5900 --name [name it something] [name of image]
+
+* Start tightvnc and connect to localhost:5900
+* Right click anywhere on the screen Applications -> Shell -> Bash
+* cd examples
+* Run any of the files with python3 filename
