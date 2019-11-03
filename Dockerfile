@@ -27,6 +27,7 @@ RUN \
     virtualenv $VENV --python=python3 && \
     . $VENV/bin/activate && \
     mkdir $CODE_DIR && \
+    chown -v -R ls:ls /home/ls/venv && \
     cd $CODE_DIR && \
     pip3 install --upgrade pip && \
     pip3 install codacy-coverage && \
@@ -56,7 +57,7 @@ ENV PATH=$VENV/bin:$PATH
 
 COPY /include/bootstrap.sh /home/ls/
 WORKDIR /home/ls/
-RUN git clone https://github.com/AI-Guru/gym-metacar.git
+RUN git clone https://github.com/AI-Guru/gym-metacar.git && chown -v -R ls:ls /home/ls/gym-metacar
 WORKDIR /home/ls/gym-metacar
 
 CMD ["/bin/sh", "/home/ls/bootstrap.sh"]
