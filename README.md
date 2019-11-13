@@ -13,7 +13,7 @@ To run:
 3. docker build -t [name of image] .
 4. docker run -p 5900:5900 --name [name it something] filipdadgar/ls-gym
 
-* Start tightvnc and connect to localhost:5900
+* Start [tightvnc](https://www.tightvnc.com) and connect to localhost:5900
 * Right click anywhere on the screen Applications -> Shell -> Bash
 * cd examples
 * Run any of the files with python3 filename
