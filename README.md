@@ -18,6 +18,6 @@ Or build your own image:
 
 
 * Start [tightvnc](https://www.tightvnc.com) and connect to localhost:5900
-* Right click anywhere on the screen Applications -> Shell -> Bash
+* Right click anywhere on the screen and then Applications -> Shell -> Bash
 * cd examples
 * Run any of the files with python3 filename
