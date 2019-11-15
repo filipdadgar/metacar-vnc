@@ -8,10 +8,14 @@ This image is based on Ubuntu with VNC and all nessaccary packages for running g
 
 To run:
 
+docker run -p 5900:5900 --name [name it something] filipdadgar/ls-gym
+
+Or build your own image:
+
 1. Clone the repo
 2. cd to directory
 3. docker build -t [name of image] .
-4. docker run -p 5900:5900 --name [name it something] filipdadgar/ls-gym
+
 
 * Start [tightvnc](https://www.tightvnc.com) and connect to localhost:5900
 * Right click anywhere on the screen Applications -> Shell -> Bash
