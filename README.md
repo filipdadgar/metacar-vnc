@@ -9,6 +9,7 @@ This image is based on Ubuntu with VNC and all nessaccary packages for running g
 To run:
 
 docker run -p 6000:5900 --name [name it something] filipdadgar/ls-gym
+
 With password:
 docker run -p 6000:5900 --name [name it something] --env VNC_SERVER_PASSWORD=password filipdadgar/ls-gym
 
